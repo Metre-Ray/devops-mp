@@ -1,0 +1,35 @@
+{
+  "name": "devops-mp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "tsc && node dist/main.js",
+    "start:server:dev": "nodemon --watch src/** -e ts --exec npm run start:server",
+    "build:front": "cd ./client/ngQuote && ng build --output-path ../../static",
+    "start:app": "npm run build:front && npm run start:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metre-Ray/devops-mp.git"
+  },
+  "author": "Diana Loika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Metre-Ray/devops-mp/issues"
+  },
+  "homepage": "https://github.com/Metre-Ray/devops-mp#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "nodemon": "^2.0.7",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "process": "^0.11.10",
+    "uuid": "^8.3.2"
+  }
+}
