@@ -15,3 +15,7 @@ compile front and run server: `npm run start:app`
 run server with nodemon: `npm run start:server:dev`
 
 quotes.json was taken from https://github.com/dwyl/quotes
+
+## Task 2
+
+In Progress...
